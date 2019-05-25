@@ -17,7 +17,7 @@ Zbiór treningowy zawiera 2000 obserwacji i 500 zmiennych. Dane są wyłącznie 
   * *wrapper methods*
   * *embedded methods*
 
-<img src="correlated.png" alt="corr" width="400" align="right"/>
+<img src="../raport/correlated.png" alt="corr" width="400" align="right"/>
 
 Dokonano następujących operacji wstępnych:
 
@@ -73,11 +73,11 @@ Wyniki uzyskane na zbiorze testowym:
 
 Krzywe ROC:
 
-![](roc_curve.png)
+![](../raport/roc_curve.png)
 
 ## 6. Porównanie ważności zmiennych przed wyborem i po
 
-Częstość wyboru zmiennych przez LightGBM na 10 zmiennych po lewej, na 500 zmiennych po prawej. Widać, że wybór zmiennych jest identyczny. Można z tego wnioskować, że wyboru zmiennych istotnych można by też dokonać jako 10 najistotniejszych zmiennych dla modelu boostingowego wytrenowanego na wszystkich 500 zmiennych (jako próg można by przyjąć 1.25 średniej z ważności zmiennych).
+Częstość wyboru zmiennych przez LightGBM na 10 zmiennych po lewej, na 500 zmiennych po prawej. Widać, że wybór zmiennych jest identyczny. Można z tego wnioskować, że wyboru zmiennych istotnych można by też dokonać jako 10 najistotniejszych zmiennych dla domyślnego modelu boostingowego wytrenowanego na wszystkich 500 zmiennych (jako próg można by przyjąć np. 1.25 średniej z ważności zmiennych).
 
-<img src="model_fi_1.png" alt="corr" style="width:50%" align="left"/>
-<img src="model_fi_2.png" alt="corr" style="width:50%" align="right"/>
+<img src="../raport/model_fi_1.png" alt="corr" style="width:50%" align="left"/>
+<img src="../raport/model_fi_2.png" alt="corr" style="width:50%" align="right"/>
